@@ -1,4 +1,5 @@
 import React from 'react';
+import './ImageList.css';
 
 const ImageList = props => {
   // const listOfImages = props.images.map(image => {
@@ -9,7 +10,7 @@ const ImageList = props => {
   // return <div>{listOfImages}</div>;
 
   return (
-    <div>
+    <div className='img-list'>
       {props.images.map(image => {
         return (
           // key prop is important to uniquely identify the element also for any updates.
